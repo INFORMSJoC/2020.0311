@@ -34,24 +34,26 @@ Below is the BibTex for citing this version of the code.
 
 The goal of this software is to solve the problem of appointment scheduling with time-dependent no-shows. In such problem the goal is to determine the 
 appointment time of a list of patients, taking into account that each patient may not show up for their appointment. Moreover, the probability of no-show
-depends on the time scheduled for the appointment. This is therefore an optimization probelem with decision-dependent uncertainty.
+depends on the time scheduled for the appointment. This is therefore an optimization problem with decision-dependent uncertainty.
 
 ## Running the code
 
 The code runs in Matlab. The file `SPGP.m` contains a script with all the parameters of the problem, and then a call to a routine that implements the
-optimization algorithm. 
+optimization algorithm. The default values of the parameters can be changed, following the instructions on the script file.
 
+There are also two parameters for the algorithm itself. One is the initial sample size used by the simulation-based method, and the other (`Trials`) is the desired number of runs. As described in the paper, a multi-start approach is implemented to deal with the non-convexity of the problem, so each run randomly selects a feasible starting point for the algorithm.
+
+Once the code is run, the results (optimal schedule, and a 95% confidence interval for the optimal cost) are saved on files called `schedule_<type>_<run>.mat`, where `<type>` indicates the show-up probability function class (1, 2 or 3) and `<run>`is the run number.
 
 ## Results
 
-Figure 3 in the paper, reproduced below, shows the optimal schedules for 6 different show-up probability functions. In the script, one selects one of three classes of  show-up probability functions: linear, quadratic, or cosine. The parameter `P1` corresponds to the show-up probability at time 0, whereas the meaning of `P2` depends on which of the three classes of show-up probability functions is being used. 
+Figure 3 in the paper, reproduced below, shows the optimal schedules for 6 different show-up probability functions, under exponentially distributed service times. In the script, one selects one of three classes of  show-up probability functions: linear, quadratic, or cosine. The parameter `P1` corresponds to the show-up probability at time 0, whereas the meaning of `P2` depends on which of the three classes of show-up probability functions is being used. 
 
 
 ![Figure 1](https://github.com/thmello1/2020.0311/files/8496907/schedule_p_esp.pdf)
 
 
-
 ## Replicating
 
-To replicate the results in the figure, run the `SPGP.m` script changing the value of `ShapeShowUpProb` to the corresponding class, and the values of `P1` and `P2` accordingly.
+To replicate approximately the results in the figure, run the `SPGP.m` script changing the value of `ShapeShowUpProb` to the corresponding class, and the values of `P1` and `P2` accordingly. The plots can be obtained using the script `plot_schedule.m`. Note that it is not possible to replicate exactly the results in the figure since the algorithm uses random samples and random starting points. Still, the results should looks similar to those in the figure.
 
