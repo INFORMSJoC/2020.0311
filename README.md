@@ -16,6 +16,7 @@ by T. Homem-de-Mello, Q. Kong and R. Godoy-Barba.
 ## Cite
 
 To cite this software, please cite the [paper](https://doi.org/) using its DOI and the software itself using the following DOI.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6471628.svg)](https://doi.org/10.5281/zenodo.6471628)
 
 Below is the BibTex for citing this version of the code.
