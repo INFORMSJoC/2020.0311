@@ -15,7 +15,8 @@ by T. Homem-de-Mello, Q. Kong and R. Godoy-Barba.
 
 ## Cite
 
-To cite this software, please cite the [paper](https://doi.org/) using its DOI.
+To cite this software, please cite the [paper](https://doi.org/) using its DOI and the software itself using the following DOI.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6471628.svg)](https://doi.org/10.5281/zenodo.6471628)
 
 Below is the BibTex for citing this version of the code.
 
@@ -25,8 +26,8 @@ Below is the BibTex for citing this version of the code.
   publisher =     {INFORMS Journal on Computing},
   title =         {A Simulation Optimization Approach for Appointment Scheduling Problem with Decision-Dependent Uncertainties},
   year =          {2022},
-  doi =           {https://doi.org/},
-  url =           {https://github.com/INFORMSJoC/2020.0311},
+  doi =           {10.5281/zenodo.6471628},
+  note =           {https://github.com/INFORMSJoC/2020.0311},
 }  
 ```
 
