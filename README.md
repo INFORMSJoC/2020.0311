@@ -22,13 +22,13 @@ To cite this software, please cite the [paper](https://doi.org/) using its DOI a
 Below is the BibTex for citing this version of the code.
 
 ```
-@article{CacheTest,
+@article{SPGPcode,
   author =        {T. {Homem-de-Mello}, Q. Kong and R. {Godoy-Barba}},
   publisher =     {INFORMS Journal on Computing},
   title =         {A Simulation Optimization Approach for Appointment Scheduling Problem with Decision-Dependent Uncertainties},
   year =          {2022},
   doi =           {10.5281/zenodo.6471628},
-  note =           {https://github.com/INFORMSJoC/2020.0311},
+  note =           {https://github.com/INFORMSJoC/2020.0311}
 }  
 ```
 
@@ -52,7 +52,8 @@ Once the code is run, the results (optimal schedule, and a 95% confidence interv
 Figure 3 in the paper, reproduced below, shows the optimal schedules for 6 different show-up probability functions, under exponentially distributed service times. In the script, one selects one of three classes of  show-up probability functions: linear, quadratic, or cosine. The parameter `P1` corresponds to the show-up probability at time 0, whereas the meaning of `P2` depends on which of the three classes of show-up probability functions is being used. 
 
 
-![Figure 1](https://github.com/thmello1/2020.0311/files/8496907/schedule_p_esp.pdf)
+![Figure 1]([schedule_p_esp.pdf])
+
 
 
 ## Replicating
