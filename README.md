@@ -9,7 +9,7 @@ Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[A Simulation Optimization Approach for Appointment Scheduling Problem with Decision-Dependent Uncertainties](https://doi.org/) 
+[A Simulation Optimization Approach for Appointment Scheduling Problem with Decision-Dependent Uncertainties](https://pubsonline.informs.org/doi/10.1287/ijoc.2022.1212) 
 by T. Homem-de-Mello, Q. Kong and R. Godoy-Barba. 
 
 
